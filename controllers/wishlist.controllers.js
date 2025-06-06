@@ -50,6 +50,7 @@ export const addToWishlist = asyncWrapper(async (req, res) => {
       price: gear.price,
       rating: gear.rating,
       image: gear.imageUrl,
+      inStock: gear.inStock,
     });
   }
 
