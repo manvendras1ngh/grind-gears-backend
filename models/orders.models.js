@@ -24,9 +24,8 @@ const ordersSchema = new mongoose.Schema(
       },
     ],
     shippingAddress: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Address",
-      required: true,
+      addressType: { type: String, required: true },
+      fullAddress: { type: String, required: true },
     },
     totalAmount: {
       type: Number,
